@@ -83,7 +83,7 @@ public abstract class SampleProcessor extends SingleLaneRecordProcessor {
     }
 
     private JOpenCageLatLng getRecord(String request) {
-        JOpenCageGeocoder jOpenCageGeocoder = new JOpenCageGeocoder("b45346c49f8d42d7b34b52b899919e3d");
+        JOpenCageGeocoder jOpenCageGeocoder = new JOpenCageGeocoder("");
         JOpenCageForwardRequest jOpenRequest = new JOpenCageForwardRequest(request);
         JOpenCageResponse response = jOpenCageGeocoder.forward(jOpenRequest);
         return response.getFirstPosition();
